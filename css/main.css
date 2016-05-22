@@ -1,0 +1,343 @@
+* {  
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'DisposableDroidBB';
+    src: url('../fonts/DisposableDroidBB.otf');
+}
+
+body, html {
+    padding: 0;
+    margin: 0;
+    background: black;
+    overflow-x: hidden;
+}
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+header {
+    width: 344px;
+    height: 338px;
+    margin: 20px auto;
+    background: url('../img/logo.png') center center no-repeat;
+    background-size: cover;
+    margin-bottom: 50px;
+}
+
+.copyblock {
+    font-family: 'DisposableDroidBB';
+    color: white;
+}
+
+.copyblock div {
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+}
+
+.copyblock div:nth-child(odd) {
+    padding-right: 30%;
+}
+
+.copyblock div:nth-child(even) {
+    padding-left: 30%;
+}
+
+.copyblock img {
+    margin: 20px 0;
+    width: 30%;
+}
+
+.subscribe {
+    width: 300px;
+    margin: 100px auto 80px;
+}
+
+#mc_embed_signup input[type="email"] {
+    box-shadow: 4px 4px 0px #DD0028, 8px 8px 0px #DD0028;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    margin-bottom: 10px;
+}
+
+#mc_embed_signup div.mce_inline_error {
+    margin: 0 0 10px 0 !important;
+    font-size: 30px !important;
+    background-color: transparent !important;
+    font-weight: bold !important;
+    z-index: 1 !important;
+    color: #DD0028 !important;
+    width: 100% !important;
+    text-align: center !important;
+    font-family: 'DisposableDroidBB' !important;
+}
+
+#mc_embed_signup input[type="submit"] {
+    background: transparent;
+    border: 0;
+    box-shadow: 0;
+    font-family: 'DisposableDroidBB' !important;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+#mc_embed_signup input[type="submit"]:hover {
+    color: #DD0028;
+}
+
+#mc_embed_signup input:focus {
+    outline: none;
+}
+
+#mce-error-response {
+    color: #DD0028;
+    font-family: 'DisposableDroidBB';
+    margin-bottom: 10px;
+}
+
+#mce-success-response {
+    color: #fff;
+    font-family: 'DisposableDroidBB';
+    margin-bottom: 10px;
+}
+
+.lineup {
+    display: table;
+    width: 100vw;
+    padding: 20px;
+}
+
+.lineup div {
+    width: 25%;
+    display: table-cell;
+    padding: 20px;
+}
+
+.lineup div img {
+    width: 100%;
+    height: auto;
+    box-shadow: 4px 4px 0px 0px #27182e;
+}
+
+footer {
+    width: 100%;
+    margin: 30px 0;
+    text-align: center;
+    font-family: 'DisposableDroidBB';    
+}
+
+footer a {
+    text-decoration: none;
+    color: #DD0028;
+    font-size: 30px;
+}
+
+footer a:hover {
+    color: white;
+}
+
+@media only screen and (max-width: 800px) {
+    .lineup {
+       padding: 0px;
+       margin-top: 40px;
+    }
+    .lineup div { 
+        padding: 10px;
+    }
+    .copyblock div {
+        width: 100%;
+        text-align: center;
+        font-size: 24px;
+    }
+    .copyblock div:first-child {
+        margin-top: 30px;
+    }
+    .copyblock div:nth-child(odd) {
+        padding-right: 0;
+    }
+
+    .copyblock div:nth-child(even) {
+        padding-left: 0;
+    }
+    .copyblock img {
+        margin: 20px 0;
+        width: 50%;
+    }
+    footer a {
+        font-size: 20px;
+    }
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
